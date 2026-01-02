@@ -53,7 +53,7 @@
         }
         .reveal.visible { opacity: 1; transform: translateY(0); }
 
-        /* Estilos do Slider - Altura ajustada para evitar imagens gigantes */
+        /* Estilos do Slider - Altura Compacta */
         .hero-slider-container {
             position: absolute;
             top: 0;
@@ -84,9 +84,8 @@
         .slide img {
             width: 100%;
             height: 100%;
-            /* 'object-position: center 20%' garante que o foco seja o rosto/tronco do atleta */
             object-fit: cover;
-            object-position: center 20%; 
+            object-position: center 15%; 
         }
 
         .card-border {
@@ -112,52 +111,52 @@
 <body class="overflow-x-hidden">
 
     <!-- Navegação -->
-    <nav class="fixed top-0 w-full z-50 bg-[#04070d]/90 backdrop-blur-md border-b border-white/5 py-4 px-6">
+    <nav class="fixed top-0 w-full z-50 bg-[#04070d]/90 backdrop-blur-md border-b border-white/5 py-3 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center text-white">
-            <div class="font-black tracking-tighter text-xl uppercase italic">NF<span class="text-accent-color">10</span></div>
-            <div class="flex items-center gap-6 text-[10px] font-bold uppercase tracking-widest">
+            <div class="font-black tracking-tighter text-lg uppercase italic">NF<span class="text-accent-color">10</span></div>
+            <div class="flex items-center gap-5 text-[9px] font-bold uppercase tracking-widest">
                 <a href="#hero" class="hover:text-accent-color transition-colors">Início</a>
                 <a href="#analytics" class="hover:text-accent-color transition-colors">Performance</a>
-                <a href="https://wa.me/5583986656241" target="_blank" class="bg-accent-color px-4 py-2 rounded-full text-black hover:bg-white transition-all">Assessoria</a>
+                <a href="https://wa.me/5583986656241" target="_blank" class="bg-accent-color px-3 py-1.5 rounded-full text-black hover:bg-white transition-all">Assessoria</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section com Altura Proporcional (70-80% da tela) -->
-    <section id="hero" class="relative h-[70vh] md:h-[80vh] w-full flex flex-col justify-end pb-12 md:pb-20 overflow-hidden bg-transparent mt-[60px]">
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-[40vh] md:h-[45vh] w-full flex flex-col justify-end pb-8 md:pb-12 overflow-hidden bg-transparent mt-[52px]">
         
         <div class="hero-slider-container" id="hero-slider">
-            <!-- Slides - Certifique-se de que as imagens estão no repositório -->
             <div class="slide active">
-                <img src="tonynho4.jpg" alt="">
+                <img src="tonynho4.jpg" alt="Atleta Nairton Filho em Ação">
             </div>
             <div class="slide">
-                <img src="image_eb8a8d.png" alt="">
+                <img src="image_eb8a8d.png" alt="Nairton Filho Futsal 1">
             </div>
             <div class="slide">
-                <img src="image_eb99f2.png" alt="">
+                <img src="image_eb99f2.png" alt="Nairton Filho Futsal 2">
             </div>
             <div class="slide">
-                <img src="image_eba571.png" alt="">
+                <img src="image_eba571.png" alt="Nairton Filho Futsal 3">
             </div>
 
             <!-- Efeitos de Sombra e Gradiente -->
-            <div class="absolute inset-0 bg-black/30" style="z-index: 10;"></div>
+            <div class="absolute inset-0 bg-black/40" style="z-index: 10;"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#04070d] via-transparent to-transparent" style="z-index: 11;"></div>
         </div>
         
         <div class="relative z-20 p-6 max-w-7xl mx-auto w-full">
             <div class="reveal">
-                <span class="inline-block px-3 py-1 mb-4 border border-accent-color text-accent-color rounded-full text-[9px] font-bold uppercase tracking-[0.3em] bg-black/60 backdrop-blur-sm">Elite Futsal Athlete</span>
-                <h1 class="text-5xl md:text-8xl font-extrabold text-white leading-[0.9] tracking-tighter uppercase">
-                    Nairton <br> <span class="font-italic text-gradient" style="background-image: linear-gradient(138deg, #f59e0b 50%, #ffffff 160%);">Filho</span>
+                <span class="inline-block px-2 py-0.5 mb-2 border border-accent-color text-accent-color rounded-full text-[8px] font-bold uppercase tracking-[0.2em] bg-black/60 backdrop-blur-sm">Elite Futsal Athlete</span>
+                <!-- Ajuste aqui: leading-tight e tracking-tight para evitar cortes no nome -->
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight tracking-tight uppercase">
+                    Nairton <br> 
+                    <span class="font-italic text-gradient inline-block pr-4 pb-1" style="background-image: linear-gradient(138deg, #f59e0b 50%, #ffffff 160%);">
+                        Filho
+                    </span>
                 </h1>
-                <p class="mt-6 max-w-lg text-sm md:text-lg text-gray-300 font-manrope leading-relaxed drop-shadow-xl">
-                    Excelência técnica e inteligência táctica aplicada ao alto rendimento.
-                </p>
             </div>
-            <div class="mt-8 reveal" style="transition-delay: 0.2s;">
-                <a href="#analytics" class="bg-accent-color text-white font-black text-[10px] uppercase tracking-widest py-4 px-10 rounded-full hover:scale-105 transition-all btn-pulse inline-block shadow-2xl">
+            <div class="mt-6 reveal" style="transition-delay: 0.2s;">
+                <a href="#analytics" class="bg-accent-color text-white font-black text-[9px] uppercase tracking-widest py-3 px-8 rounded-full hover:scale-105 transition-all btn-pulse inline-block shadow-2xl">
                     Ver Scouting Report
                 </a>
             </div>
@@ -165,68 +164,68 @@
     </section>
 
     <!-- Grelha de KPIs -->
-    <section class="py-12 px-6 bg-[#04070d] border-b border-white/5 text-white">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section class="py-10 px-6 bg-[#04070d] border-b border-white/5 text-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div class="reveal">
-                <p class="stat-number text-4xl md:text-5xl">124</p>
-                <p class="text-[9px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Golos</p>
+                <p class="stat-number text-3xl md:text-4xl">124</p>
+                <p class="text-[8px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Golos</p>
             </div>
             <div class="reveal" style="transition-delay: 0.1s;">
-                <p class="stat-number text-4xl md:text-5xl">85</p>
-                <p class="text-[9px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Assistências</p>
+                <p class="stat-number text-3xl md:text-4xl">85</p>
+                <p class="text-[8px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Assistências</p>
             </div>
             <div class="reveal" style="transition-delay: 0.2s;">
-                <p class="stat-number text-4xl md:text-5xl text-accent-color">12</p>
-                <p class="text-[9px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Títulos</p>
+                <p class="stat-number text-3xl md:text-4xl text-accent-color">12</p>
+                <p class="text-[8px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Títulos</p>
             </div>
             <div class="reveal" style="transition-delay: 0.3s;">
-                <p class="stat-number text-4xl md:text-5xl">92%</p>
-                <p class="text-[9px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Passes</p>
+                <p class="stat-number text-3xl md:text-4xl">92%</p>
+                <p class="text-[8px] uppercase tracking-widest text-gray-500 mt-1 font-bold tracking-[0.2em]">Passes</p>
             </div>
         </div>
     </section>
 
-    <!-- Secção Power BI - Dashboard Tactical Intelligence -->
-    <section id="analytics" class="py-20 md:py-28 px-6 bg-[#04070d] relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-color/5 blur-[120px] rounded-full"></div>
+    <!-- Secção Power BI -->
+    <section id="analytics" class="py-16 md:py-24 px-6 bg-[#04070d] relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-accent-color/5 blur-[100px] rounded-full"></div>
         
         <div class="max-w-7xl mx-auto relative z-10">
-            <div class="reveal mb-10 text-white text-left">
-                <span class="text-accent-color font-black uppercase tracking-[0.4em] text-[10px]">Data Intelligence</span>
-                <h2 class="text-3xl md:text-5xl font-bold uppercase tracking-tighter mt-2">Performance <span class="font-italic text-white/40 italic">Analytics</span></h2>
-                <p class="mt-4 text-sm text-gray-400 font-manrope max-w-2xl leading-relaxed">Dashboard interactivo gerado via Microsoft Power BI integrando análise de Scouting profissional.</p>
+            <div class="reveal mb-8 text-white text-left">
+                <span class="text-accent-color font-black uppercase tracking-[0.4em] text-[9px]">Data Intelligence</span>
+                <h2 class="text-2xl md:text-4xl font-bold uppercase tracking-tighter mt-1 text-white">Performance <span class="font-italic text-white/40 italic">Analytics</span></h2>
+                <p class="mt-2 text-xs text-gray-400 font-manrope max-w-xl leading-relaxed">Dashboard interactivo gerado via Microsoft Power BI integrando análise de Scouting profissional.</p>
             </div>
 
-            <!-- Moldura Estilo Interface Digital -->
+            <!-- Moldura do Dashboard -->
             <div class="reveal rounded-2xl border border-white/10 overflow-hidden shadow-2xl bg-[#0c1019]">
-                <div class="bg-white/5 border-b border-white/10 px-6 py-3 flex items-center justify-between text-white">
+                <div class="bg-white/5 border-b border-white/10 px-5 py-2 flex items-center justify-between text-white">
                     <div class="flex gap-1.5">
-                        <div class="w-2 h-2 rounded-full bg-red-500/40"></div>
-                        <div class="w-2 h-2 rounded-full bg-yellow-500/40"></div>
-                        <div class="w-2 h-2 rounded-full bg-green-500/40"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-red-500/40"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-yellow-500/40"></div>
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-500/40"></div>
                     </div>
-                    <div class="text-[8px] font-mono text-gray-500 tracking-[0.3em] uppercase">NF10_Operational_Dashboard</div>
-                    <div class="w-8"></div>
+                    <div class="text-[7px] font-mono text-gray-500 tracking-[0.3em] uppercase">NF10_Operational_Dashboard</div>
+                    <div class="w-6"></div>
                 </div>
 
-                <div class="flex flex-col lg:flex-row h-auto lg:h-[650px]">
+                <div class="flex flex-col lg:flex-row h-auto lg:h-[600px]">
                     <!-- Sidebar de Indicadores -->
-                    <div class="lg:w-64 border-r border-white/5 p-6 bg-black/20 text-white text-left hidden lg:block">
-                        <h4 class="text-[9px] font-black uppercase mb-8 tracking-[0.2em] border-b border-white/10 pb-4">Indicadores Ativos</h4>
-                        <ul class="space-y-8">
+                    <div class="lg:w-56 border-r border-white/5 p-6 bg-black/20 text-white text-left hidden lg:block">
+                        <h4 class="text-[8px] font-black uppercase mb-6 tracking-[0.2em] border-b border-white/10 pb-3">Indicadores</h4>
+                        <ul class="space-y-6">
                             <li>
-                                <p class="text-[10px] font-bold text-accent-color uppercase tracking-widest">Heatmaps</p>
-                                <p class="text-[10px] text-gray-500 mt-1">Análise de ocupação de espaços e volumetria táctica.</p>
+                                <p class="text-[9px] font-bold text-accent-color uppercase tracking-widest">Heatmaps</p>
+                                <p class="text-[9px] text-gray-500 mt-1 leading-tight">Zonas de ocupação e influência táctica.</p>
                             </li>
                             <li>
-                                <p class="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Shooting xG</p>
-                                <p class="text-[10px] text-gray-500 mt-1">Taxa de sucesso e quadrantes preferenciais de finalização.</p>
+                                <p class="text-[9px] font-bold text-blue-500 uppercase tracking-widest">Shooting xG</p>
+                                <p class="text-[9px] text-gray-500 mt-1 leading-tight">Taxa de sucesso e quadrantes de remate.</p>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Embed Power BI -->
-                    <div class="flex-1 bg-black min-h-[450px] relative">
+                    <div class="flex-1 bg-black min-h-[400px] relative">
                         <iframe 
                             class="absolute inset-0 w-full h-full opacity-95"
                             src="https://app.powerbi.com/view?r=eyJrIjoiNjE2ZmE0NzEtOWJjYS00YmJjLTk1YmItMGRkOTA0MGVlYWVkIiwidCI6ImQ0YThlNTAxLTM3N2MtNDZiMC1hN2Q2LWVjZTA4NzdlNmFiMyJ9" 
@@ -240,34 +239,34 @@
     </section>
 
     <!-- DNA & Conquistas -->
-    <section class="py-20 px-6 bg-black text-white text-left">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24">
+    <section class="py-16 px-6 bg-black text-white text-left">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20">
             
             <div>
-                <h2 class="reveal text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-10 italic">Elite <span class="font-italic text-accent-color">Record</span></h2>
+                <h2 class="reveal text-2xl md:text-3xl font-bold uppercase tracking-tighter mb-8 italic">Elite <span class="font-italic text-accent-color">Record</span></h2>
                 <div class="space-y-4">
-                    <div class="reveal p-6 card-border rounded-xl flex items-start gap-5 hover:border-accent-color/30 transition-all">
-                        <span class="text-2xl">🏆</span>
+                    <div class="reveal p-5 card-border rounded-xl flex items-start gap-4 hover:border-accent-color/30 transition-all">
+                        <span class="text-xl">🏆</span>
                         <div>
-                            <h3 class="font-bold text-sm uppercase text-white tracking-widest">Campeão Estadual</h3>
-                            <p class="text-xs text-gray-500 mt-1">Liderança técnica absoluta na conquista do título principal.</p>
+                            <h3 class="font-bold text-xs uppercase text-white tracking-widest">Campeão Estadual</h3>
+                            <p class="text-[10px] text-gray-500 mt-1">Liderança técnica absoluta na conquista do título principal.</p>
                         </div>
                     </div>
-                    <div class="reveal p-6 card-border rounded-xl flex items-start gap-5 hover:border-accent-color/30 transition-all" style="transition-delay: 0.1s;">
-                        <span class="text-2xl">🥇</span>
+                    <div class="reveal p-5 card-border rounded-xl flex items-start gap-4 hover:border-accent-color/30 transition-all" style="transition-delay: 0.1s;">
+                        <span class="text-xl">🥇</span>
                         <div>
-                            <h3 class="font-bold text-sm uppercase text-white tracking-widest">Artilheiro Máximo</h3>
-                            <p class="text-xs text-gray-500 mt-1">Recordista de golos em competições nacionais oficiais.</p>
+                            <h3 class="font-bold text-xs uppercase text-white tracking-widest">Artilheiro Máximo</h3>
+                            <p class="text-[10px] text-gray-500 mt-1">Recordista de golos em competições nacionais oficiais.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div>
-                <h2 class="reveal text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-10 italic">Technical <span class="font-italic text-white/40">DNA</span></h2>
-                <div class="space-y-8 reveal">
+                <h2 class="reveal text-2xl md:text-3xl font-bold uppercase tracking-tighter mb-8 italic">Technical <span class="font-italic text-white/40">DNA</span></h2>
+                <div class="space-y-6 reveal">
                     <div class="group">
-                        <div class="flex justify-between mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-gray-500">
+                        <div class="flex justify-between mb-1 text-[8px] font-black uppercase tracking-[0.2em] text-gray-500">
                             <span>Explosão 1x1</span>
                             <span class="text-white">96%</span>
                         </div>
@@ -276,7 +275,7 @@
                         </div>
                     </div>
                     <div class="group">
-                        <div class="flex justify-between mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-gray-500">
+                        <div class="flex justify-between mb-1 text-[8px] font-black uppercase tracking-[0.2em] text-gray-500">
                             <span>Precisão Técnica</span>
                             <span class="text-white">94%</span>
                         </div>
@@ -285,7 +284,7 @@
                         </div>
                     </div>
                     <div class="group">
-                        <div class="flex justify-between mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-gray-500">
+                        <div class="flex justify-between mb-1 text-[8px] font-black uppercase tracking-[0.2em] text-gray-500">
                             <span>IQ Táctico</span>
                             <span class="text-white">98%</span>
                         </div>
@@ -299,24 +298,23 @@
         </div>
     </section>
 
-    <!-- Footer / CTA -->
-    <footer class="py-16 px-6 bg-[#04070d] text-center border-t border-white/5">
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-[#04070d] text-center border-t border-white/5">
         <div class="max-w-4xl mx-auto reveal">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-white uppercase tracking-tighter leading-none mb-10">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white uppercase tracking-tighter leading-none mb-8">
                 Staff <span class="text-accent-color italic font-instrument-serif">Nairton Filho</span>
             </h2>
-            <div class="flex flex-col items-center gap-6">
-                <a href="https://wa.me/5583986656241" target="_blank" class="bg-white text-black font-black text-[10px] uppercase tracking-[0.2em] py-5 px-12 rounded-full hover:bg-accent-color hover:text-white transition-all shadow-2xl">
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://wa.me/5583986656241" target="_blank" class="bg-white text-black font-black text-[9px] uppercase tracking-[0.2em] py-4 px-10 rounded-full hover:bg-accent-color hover:text-white transition-all shadow-2xl">
                     Falar com Assessoria NF10
                 </a>
-                <p class="text-gray-600 text-[8px] uppercase tracking-[0.4em] mt-16">&copy; 2026 Nairton Filho. Todos os direitos reservados.</p>
+                <p class="text-gray-600 text-[7px] uppercase tracking-[0.4em] mt-10">&copy; 2026 Nairton Filho. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts de Interface -->
     <script>
-        // Lógica do Slider do Hero
+        // Lógica do Slider
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
         function nextSlide() {
@@ -326,13 +324,12 @@
         }
         setInterval(nextSlide, 5000);
 
-        // Lógica de Revelação no Scroll
+        // Intersection Observer para animações
         const revealElements = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    // Animar as barras de progresso ao visualizar
                     const progressBar = entry.target.querySelector('.bg-accent-color');
                     if (progressBar) {
                         const targetWidth = progressBar.style.width;
